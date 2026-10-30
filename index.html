@@ -43,6 +43,29 @@
         align-items: start !important;
       }
     }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo {
+      display: block;
+      width: 58px;
+      height: 58px;
+      flex: 0 0 58px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 50%;
+      background: #fff;
+    }
+    @media (max-width: 600px) {
+      .brand-logo {
+        width: 46px;
+        height: 46px;
+        flex-basis: 46px;
+      }
+    }
   </style>
 </head>
 
@@ -50,7 +73,7 @@
   <header class="header">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Klinik Utama Clara Pfänder Medika">
-        <span class="mark">✚</span>
+        <img class="brand-logo" src="assets/Logo%20KLINIK.png?v=2" alt="Logo Klinik Utama Clara Pfänder Medika">
         <span>
           <small>KLINIK UTAMA</small>
           <b>CLARA PFÄNDER MEDIKA</b>
