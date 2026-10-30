@@ -9,41 +9,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Pengaturan khusus gambar: tampilkan seluruh flyer, jangan dipotong -->
+  <link rel="stylesheet" href="./style.css">
   <style>
-    .hero-grid > div:last-child,
-    .care-grid > img {
-      min-width: 0;
-      width: 100%;
-      height: auto !important;
-      overflow: visible !important;
-    }
+    /* Pastikan seluruh flyer terlihat dan tidak terpotong */
     img.flyer {
-      display: block !important;
-      width: 100% !important;
-      max-width: 100% !important;
+      display: block;
+      width: 100%;
+      max-width: 100%;
       height: auto !important;
       max-height: none !important;
       aspect-ratio: auto !important;
       object-fit: contain !important;
-      object-position: center !important;
+      object-position: center;
       border-radius: 16px;
     }
-    .hero-grid > div:last-child img.flyer,
-    .care-grid > img.flyer {
-      align-self: start;
+    .hero-grid > div:last-child,
+    .care-grid > img {
+      min-width: 0;
+      width: 100%;
+      height: auto;
+      overflow: visible;
     }
     @media (min-width: 851px) {
-      .hero-grid {
-        align-items: start !important;
-      }
-      .care-grid {
-        align-items: start !important;
-      }
+      .hero-grid, .care-grid { align-items: start !important; }
     }
-
     .brand {
       display: inline-flex;
       align-items: center;
@@ -74,12 +63,11 @@
     }
   </style>
 </head>
-
 <body>
   <header class="header">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Klinik Utama Clara Pfänder Medika">
-        <img class="brand-logo" src="./assets/Logo%20KLINIK.png?v=20261030-3" alt="Logo Klinik Utama Clara Pfänder Medika" width="58" height="58" loading="eager" fetchpriority="high">
+        <img class="brand-logo" src="./assets/Logo%20KLINIK.png?v=20261030-4" alt="Logo Klinik Utama Clara Pfänder Medika" width="58" height="58" loading="eager" fetchpriority="high">
         <span>
           <small>KLINIK UTAMA</small>
           <b>CLARA PFÄNDER MEDIKA</b>
@@ -112,15 +100,8 @@
             <span>✓ Dokter Gigi</span>
           </div>
         </div>
-
         <div>
-          <img
-            class="flyer"
-            src="assets/flyer-layanan-klinik.jpg"
-            alt="Informasi layanan Klinik Utama Clara Pfänder Medika"
-            loading="eager"
-            style="width:100%;height:auto;max-height:none;object-fit:contain;display:block"
-          >
+          <img class="flyer" src="./assets/flyer-layanan-klinik.jpg?v=20261030-4" alt="Informasi layanan Klinik Utama Clara Pfänder Medika" loading="eager">
         </div>
       </div>
     </section>
@@ -168,14 +149,7 @@
           </ul>
           <a class="btn primary" href="https://wa.me/628118471377?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20Home%20Care%20atau%20Ambulans." target="_blank" rel="noopener">Tanya Home Care / Ambulans</a>
         </div>
-
-        <img
-          class="flyer"
-          src="assets/flyer-homecare-ambulans.jpg"
-          alt="Informasi layanan Home Care dan Ambulans Siaga 24 Jam"
-          loading="lazy"
-          style="width:100%;height:auto;max-height:none;object-fit:contain;display:block"
-        >
+        <img class="flyer" src="./assets/flyer-homecare-ambulans.jpg?v=20261030-4" alt="Informasi layanan Home Care dan Ambulans Siaga 24 Jam" loading="lazy">
       </div>
     </section>
 
@@ -203,7 +177,6 @@
           <a class="phone" href="https://wa.me/628118471377" target="_blank" rel="noopener">☎ 0811-8471-377</a>
           <a class="btn primary" href="https://wa.me/628118471377?text=Halo%20Klinik%20Clara%20Pf%C3%A4nder%20Medika%2C%20saya%20ingin%20mendapatkan%20informasi." target="_blank" rel="noopener">Chat WhatsApp Sekarang</a>
         </div>
-
         <div class="address">
           <div class="pin">⌖</div>
           <h3>Klinik Utama Clara Pfänder Medika</h3>
@@ -225,7 +198,6 @@
   </footer>
 
   <a class="wa-float" href="https://wa.me/628118471377" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
